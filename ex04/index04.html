@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale1.0">
+<title> 42 </title>
+</head>
+<body>
+
+<form action="submit-registration" method="post">
+<label for="full-name">Full Name</label>
+<input type="text" id="full-name" name="fullName" required minlength="2">
+
+<br>
+<br>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+
+<br>
+<br>
+
+<label for="password">Password</label>
+<input type="password" id="password" name="password" required minlength="8">
+
+<br>
+<br>
+
+<label for="level-biginner">Experience level:</lable>
+
+<input type="radio" id="level-beginner" name="experienceLevel" value="beginner" required>
+<label for="level-intermediate">Beginner</label>
+
+<input type="radio" id="level-intermediate" name="experienceLevel" value="intermediate" required>
+<label for="level-intermediate">Intermediate</label>
+
+
+<input type="radio" id="level-advanced" name="experienceLevel" value="advanced">
+<label for="level-advanced">Advanced</label>
+
+<br>
+<br>
+
+<label for="preferred-track">Preffered Track</label>
+<select id="preferred-track" name="preferredTrack" required>
+<option value=">Select a track</option>
+<option value="frontend">Frontend< Development</option>
+<option value="backend">Backend Development</option>
+</select>
+
+<br>
+<br>
+
+<label for="bio">Any related certifcations</label>
+<textarea id="bio" name="bio" required minlength="10"></textarea>
+
+<br>
+<br>
+
+<input type="checkbox" id= "terms" name="terms" required>
+<label for="terms"> I agree to share this data </label>
+
+<br>
+<br>
+
+<button type="submit">Submit information</button>
+
+</form>
+
+</body>
+</html>
